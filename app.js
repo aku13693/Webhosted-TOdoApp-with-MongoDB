@@ -250,7 +250,7 @@ app.get("/favicon.ico",function(req,res){
   res.status(204)
 })
 
-app.listen(3000,function(req,res){
+app.listen(process.env.PORT||3000,function(req,res){
 
   console.log("Server listening on PORT 3000");
 })
