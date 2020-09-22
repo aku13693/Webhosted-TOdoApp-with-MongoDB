@@ -9,10 +9,13 @@
         </div>
 <div class="box">
 <% for(var a = 0; a< newItem.length; a++){ %>
+  <form class="" action="/delete" method="post">
   <div class="item">
-    <input type="checkbox" name="" value="">
-      <p><%=newItem[a]%></p>
+    <input type="checkbox" name="delcheckbox" value="<%=newItem[a]._id%>" onChange="this.form.submit()">
+      <p><%=newItem[a].names%></p>
 </div>
+<input type="hidden" name="listnamehid" value="<%= listTitle %>"></input>
+</form>
 <%}%>
 <form class="item" action="/" method="post">
 <input type="text" name="name1" value="" placeholder="list item" autocomplete="off">
