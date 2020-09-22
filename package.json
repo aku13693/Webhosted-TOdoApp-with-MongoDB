@@ -19,5 +19,5 @@
     "mongoose": "^5.10.5",
     "nodemon": "^2.0.4",
     "serve-favicon": "^2.5.0"
-  },
+  }
 }
