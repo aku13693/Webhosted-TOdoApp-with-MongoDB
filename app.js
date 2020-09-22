@@ -15,7 +15,7 @@ const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
 var items =["Buy Food"];
 // var workItems = [];
-mongoose.connect('mongodb+srv://admin-akash:test123@cluster0.dbq7w.mongodb.net/toDoListDB', {useNewUrlParser:true});
+mongoose.connect('mongodb+srv://@cluster0.dbq7w.mongodb.net/toDoListDB', {useNewUrlParser:true});
 
 const todoschema = new mongoose.Schema({
   names:String
